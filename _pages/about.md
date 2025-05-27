@@ -1,49 +1,51 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+Hi! My name is Jay Rana and I am currently a Master's student at the University of Maryland College Park (UMD). I am pursuing a MS in Electrical and Computer Engineering at UMD and intend to specialize in Control, Robotics, Autonomy, and Learning (CRAL).
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+Below is a summary of my academic/research experience, projects, and extracurriculars. You can click on the headers at the top to learn more about each.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+## Academic Experience
+I graduated from UMD with a BS in Computer Engineering and a Minor in Robotics and Autonomous Systems in May of 2025. Below is a list of relevant undergraduate coursework:
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+- Robotics Planning and Perception
+- Robotics Project Laboratory
+- Capstone Design Project: Autonomous Control of Interacting Robots
+- Digital Computer Design (graduate-level)
+- Digital Control Systems
+- Signal and System Theory
+- Introduction to Artificial Intelligence
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+## Research Experience
+I was in the [Gemstone Honors Program at UMD](https://gemstone.umd.edu/){:target="_blank"}. As part of Team Affordable Natural Disaster Relief Robotics (ANDRR), I researched, prototyped, and tested an accessible modular system that can be attached to hobby quadcopters to enable onboard computer vision for the purposes of disaster relief. Our research started in the Fall of 2022 and concluded in the Spring of 2025. We wrote a thesis and successfully defended it in front of a panel of discussants. You can learn more about our research and read our thesis [here](https://teamandrr.wordpress.com/){:target="_blank"}.
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+Over the summer of 2025, I plan to work with [Dr. Yiannis Aloimonos](https://scholar.google.com/citations?hl=en&user=7QmEsOwAAAAJ&view_op=list_works){:target="_blank"} and [Levi Burner](https://scholar.google.com/citations?user=BKY_uwoAAAAJ&hl=en){:target="_blank"} on computer vision research regarding optical flow.
 
-**Markdown generator**
+## Projects
+### DogBot
+We developed a robot that can play fetch for our capstone design project. We modified a TurtleBot 3 Burger so that it could "hold" a ball in between a set of chopsticks, and attached a USB webcam to the front. We also used an Nvidia Jetson Xavier NX for performing image recognition tasks using YOLO. By running the Robot Operating System (ROS) on both devices, we were able to send camera data to the Jetson and then send velocity commands back to the TurtleBot. The Jetson performed image-based visual servoing (IBVS) based on the camera data, which enabled the TurtleBot to smoothly track objects in its field of view. After combining the subsystems together, the robot was able to track a ball, "hold" it, then track a human to return the ball to.
+<video src="../images/DogBot.mov" width="320" height="240" controls></video>
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+### Clean Out the Closet! Robot
+We developed a robot that can pick up Lego towers, avoid obstacles, and navigate between locations for our final project in our Robotics Planning and Perception class.
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+The goal of the project was to compete with other teams to move Lego towers from our "closet" to the "closet" of the other team while avoiding collisions. The robot we used for this project was the DJI RoboMaster EP Core, which comes with Mecanum wheels for omnidirectional movement, as well as a claw with a camera. The Python SDK for the RoboMaster provides callbacks and built-in commands for receiving camera data, measuring position from encoders and IMU readings, and sending velocity commands to the chassis. We created a robot controller that chooses the optimal action to take using a minimax tree, then runs a state machine based on that action to perform tasks such as picking up towers or moving towards a location. The controller also uses YOLO to detect towers and other robots on the field, and uses the Pupil AprilTags library to detect AprilTags which are located on randomly placed obstacles. The full system can navigate to locations on the map, pick up blocks using image-based visual servoing (IBVS), and avoid obstacles (robots and AprilTags).
+<video src="../images/CMSC477 Project 3.mov" width="320" height="240" controls></video>
+<video src="../images/CMSC477 Project 3 2.mov" width="320" height="240" controls></video>
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+### Image-Based Visual Servoing Controller
+The projects above both use image-based visual servoing (IBVS), which is a control technique that aims to move an object towards a desired place in an image. Indirectly, this allows robots to move towards a target while exhibiting the same stable smoothing behavior as PID controllers. For example, in DogBot, in order to track the ball and move it in between the chopsticks, we set the desired location of the image of the ball to be in the bottom center of the image. Since the TurtleBot 3 Burger is only able to move forward/backward and pivot left/right, it must necessarily move forward and turn towards the ball in order to move the image of the ball there. I followed the control equations given in ["Visual servo control I. Basic approaches" by Chaumette and Hutchinson](https://ieeexplore.ieee.org/document/4015997){:target="_blank"} and [implemented them as a Python file](https://github.com/wolr210/IBVS_Controller){:target="_blank"}, which is published on my GitHub account. In the future, I plan on expanding the controller to include all six traditional degrees of freedom, and publishing the controller as a Python package on PyPI.
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+## Extracurriculars
+### Gamer Symphony Orchestra
+I am part of the [Gamer Symphony Orchestra (GSO) at UMD](https://umd.gamersymphony.org/index.php){:target="_blank"}. We are a full symphonic rock orchestra that arranges and plays music from video games! I serve as the cello section leader and webmaster. Here is a [link to our YouTube channel](https://www.youtube.com/c/GamerSymphonyUMD){:target="_blank"}. Below is the recording of one of my favorite arrangements.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aCt4w-SBpoU?si=AVRFwneW_T1FUawN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### The Hare
+[The Hare](https://theumdhare.com/about-us/){:target="_blank"} is a satire news organization at UMD. You can read my article about how [Taco Bell planned to open a hotel near campus](https://theumdhare.com/2024/10/02/before-budget-cuts-route-1-taco-bell-had-plans-for-new-hotel/){:target="_blank"}, or my other article about how the northern lights that were visible across the United States in October 2024 were actually [caused by the spotlights of a local bar](https://theumdhare.com/2024/10/23/spotlights-from-terrapins-turf-mistaken-for-another-aurora-borealis/){:target="_blank"}.
