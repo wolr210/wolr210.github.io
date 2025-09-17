@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 Hi! My name is Jay Rana and I am currently a Master's student at the University of Maryland College Park (UMD). I am pursuing a MS in Electrical and Computer Engineering at UMD and intend to specialize in Control, Robotics, Autonomy, and Learning (CRAL).
-
+1
 Below is a summary of my academic/research/work experience, projects, and extracurriculars. You can click on the headers at the top to learn more about each.
 
 ## Academic Experience
@@ -37,6 +37,10 @@ Over the summer of 2025, I plan to work with [Dr. Yiannis Aloimonos](https://sch
 ### Summer 2022: Systems Engineering Intern, Leidos (Remote)
 
 ## Projects
+### September 16th, 2025
+September 16th, 2025 was my 22nd birthday. What made this day extra special was that the date was 3²/4²/5² (09/16/25), so it was a Pythagorean triple! I created a video of me performing the [constructive squares geometric proof of the Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem#Proofs_using_constructed_squares) with brownies and uploaded it to YouTube.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ydMqkE7AYXw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### DogBot
 We developed a robot that can play fetch for our capstone design project. We modified a TurtleBot 3 Burger so that it could "hold" a ball in between a set of chopsticks, and attached a USB webcam to the front. We also used an Nvidia Jetson Xavier NX for performing image recognition tasks using YOLO. By running the Robot Operating System (ROS) on both devices, we were able to send camera data to the Jetson and then send velocity commands back to the TurtleBot. The Jetson performed image-based visual servoing (IBVS) based on the camera data, which enabled the TurtleBot to smoothly track objects in its field of view. After combining the subsystems together, the robot was able to track a ball, "hold" it, then track a human to return the ball to.
 <video src="../images/DogBot.mov" width="320" height="240" controls></video>
