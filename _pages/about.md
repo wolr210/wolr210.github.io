@@ -37,10 +37,6 @@ Over the summer of 2025, I plan to work with [Dr. Yiannis Aloimonos](https://sch
 ### Summer 2022: Systems Engineering Intern, Leidos (Remote)
 
 ## Projects
-### September 16th, 2025
-September 16th, 2025 was my 22nd birthday. What made this day extra special was that the date was 3²/4²/5² (09/16/25), so it was a Pythagorean triple! I created a video of me performing the [constructive squares geometric proof of the Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem#Proofs_using_constructed_squares) with brownies and uploaded it to YouTube.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ydMqkE7AYXw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ### DogBot
 We developed a robot that can play fetch for our capstone design project. We modified a TurtleBot 3 Burger so that it could "hold" a ball in between a set of chopsticks, and attached a USB webcam to the front. We also used an Nvidia Jetson Xavier NX for performing image recognition tasks using YOLO. By running the Robot Operating System (ROS) on both devices, we were able to send camera data to the Jetson and then send velocity commands back to the TurtleBot. The Jetson performed image-based visual servoing (IBVS) based on the camera data, which enabled the TurtleBot to smoothly track objects in its field of view. After combining the subsystems together, the robot was able to track a ball, "hold" it, then track a human to return the ball to.
 <video src="../images/DogBot.mov" width="320" height="240" controls></video>
@@ -54,6 +50,10 @@ The goal of the project was to compete with other teams to move Lego towers from
 
 ### Image-Based Visual Servoing Controller
 The projects above both use image-based visual servoing (IBVS), which is a control technique that aims to move an object towards a desired place in an image. Indirectly, this allows robots to move towards a target while exhibiting the same stable smoothing behavior as PID controllers. For example, in DogBot, in order to track the ball and move it in between the chopsticks, we set the desired location of the image of the ball to be in the bottom center of the image. Since the TurtleBot 3 Burger is only able to move forward/backward and pivot left/right, it must necessarily move forward and turn towards the ball in order to move the image of the ball there. I followed the control equations given in ["Visual servo control I. Basic approaches" by Chaumette and Hutchinson](https://ieeexplore.ieee.org/document/4015997){:target="_blank"} and [implemented them as a Python file](https://github.com/wolr210/IBVS_Controller){:target="_blank"}, which is published on my GitHub account. In the future, I plan on expanding the controller to include all six traditional degrees of freedom, and publishing the controller as a Python package on PyPI.
+
+### September 16th, 2025
+September 16th, 2025 was my 22nd birthday. What made this day extra special was that the date was 3²/4²/5² (09/16/25), so it was a Pythagorean triple! I created a video of me performing the [constructive squares geometric proof of the Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem#Proofs_using_constructed_squares) with brownies and uploaded it to YouTube.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ydMqkE7AYXw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Extracurriculars
 ### Gamer Symphony Orchestra
