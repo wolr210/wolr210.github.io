@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 Hi! My name is Jay Rana and I am currently a Master's student at the University of Maryland College Park (UMD). I am pursuing a MS in Electrical and Computer Engineering at UMD and am specializing in Control, Robotics, Autonomy, and Learning (CRAL).
-1
+
 Below is a summary of my academic/research/work experience, projects, and extracurriculars.
 
 ## Academic Experience
