@@ -68,7 +68,7 @@ The projects above both use image-based visual servoing (IBVS), which is a contr
 ### Spring 2026: ENEE408V: Capstone Design Project; Smart Submersible Marine Vehicles (Teaching Assistant)
 As the TA for ENEE408V, I reviewed control theory and computer vision concepts in lectures. Since it is a capstone class, the students had already learned the concepts required for the project, so my goal was to guide them to think about their subersibles at the systems level. One of our teams won the 2026 UMD Capstone Design Expo! [See their project here](https://expo.umd.edu/projects/spring-2026/a3-smart-submersible-marine-vehicle){:target="_blank"}.
 
-### Spring 2026: ENEE245: Digital Circuits and Systems Laboratory
+### Spring 2026: ENEE245: Digital Circuits and Systems Laboratory (Teaching Assistant)
 As the TA for ENEE245, I was responsible for running Verilog labs and troubleshooting Xilinx Vivado and physical circuits. ENEE245 is a difficult class for many (including me when I took it) since students need to learn about hardware description languages and how to debug embedded systems. Because of this, I aimed to make the class as digestible as possible by providing reminders on the board about circuit components and asking students to walk me through their debugging process.
 
 ## Extracurriculars
