@@ -8,20 +8,20 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "Academic Experience"
-    url: /academic-experience/
+  #- title: "Academic Experience"
+  #  url: /academic-experience/
 
-  - title: "Research Experience"
-    url: /research-experience/
+  #- title: "Research Experience"
+  #  url: /research-experience/
 
-  - title: "Work Experience"
-    url: /work-experience/
+  #- title: "Work Experience"
+  #  url: /work-experience/
 
-  - title: "Projects"
-    url: /projects/
+  #- title: "Projects"
+  #  url: /projects/
 
-  - title: "Extracurriculars"
-    url: /extracurriculars/
+  #- title: "Extracurriculars"
+  #  url: /extracurriculars/
     
   # - title: "Guide"
   #   url: /markdown/

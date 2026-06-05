@@ -7,11 +7,18 @@ redirect_from:
   - /about.html
 ---
 
-Hi! My name is Jay Rana and I am currently a Master's student at the University of Maryland College Park (UMD). I am pursuing a MS in Electrical and Computer Engineering at UMD and intend to specialize in Control, Robotics, Autonomy, and Learning (CRAL).
+Hi! My name is Jay Rana and I am currently a Master's student at the University of Maryland College Park (UMD). I am pursuing a MS in Electrical and Computer Engineering at UMD and am specializing in Control, Robotics, Autonomy, and Learning (CRAL).
 1
-Below is a summary of my academic/research/work experience, projects, and extracurriculars. You can click on the headers at the top to learn more about each.
+Below is a summary of my academic/research/work experience, projects, and extracurriculars.
 
 ## Academic Experience
+Below is a list of relevant graduate coursework:
+- Linear Systems Theory
+- Nonlinear Control Systems
+- Advanced Digital Signal Processing
+- Statistical Pattern Recognition
+- Random Processes in Communication and Control
+
 I graduated from UMD with a BS in Computer Engineering and a Minor in Robotics and Autonomous Systems in May of 2025. Below is a list of relevant undergraduate coursework:
 
 - Robotics Planning and Perception
@@ -23,11 +30,17 @@ I graduated from UMD with a BS in Computer Engineering and a Minor in Robotics a
 - Introduction to Artificial Intelligence
 
 ## Research Experience
-I was in the [Gemstone Honors Program at UMD](https://gemstone.umd.edu/){:target="_blank"}. As part of Team Affordable Natural Disaster Relief Robotics (ANDRR), I researched, prototyped, and tested an accessible modular system that can be attached to hobby quadcopters to enable onboard computer vision for the purposes of disaster relief. Our research started in the Fall of 2022 and concluded in the Spring of 2025. We wrote a thesis and successfully defended it in front of a panel of discussants. You can learn more about our research and read our thesis [here](https://teamandrr.wordpress.com/){:target="_blank"}.
+My advisor is [Dr. Yiannis Aloimonos](https://scholar.google.com/citations?hl=en&user=7QmEsOwAAAAJ&view_op=list_works){:target="_blank"} and I am being assisted by postdoc [Dr. Levi Burner](https://scholar.google.com/citations?user=BKY_uwoAAAAJ&hl=en){:target="_blank"}. I am currently working on a general control algorithm which uses normal flow, which is the projection of optical flow onto the image gradient.
 
-Over the summer of 2025, I plan to work with [Dr. Yiannis Aloimonos](https://scholar.google.com/citations?hl=en&user=7QmEsOwAAAAJ&view_op=list_works){:target="_blank"} and [Levi Burner](https://scholar.google.com/citations?user=BKY_uwoAAAAJ&hl=en){:target="_blank"} on computer vision research regarding optical flow.
+Put simply, optical flow is a vector field describing how each pixel moves in an image, in units of pixels/second. The image gradient is how the image changes in various dimensions (e.g. along the X and Y axes of the image, or across time). Optical flow is difficult to calculate or estimate due to the aperture problem. Imagine you are looking through a telescope at a flag pole. If the telescope moved up and down along the length of the pole, the image of the pole in the telescope would not change. However, if the telescope moved left and right perpendicular to the pole, the image of the pole would move right and left. In other words, when using camera images to calculate motion, we can only reliably determine pixel motion perpendicular to the edges in the image. However, this measured motion is not identical to the optical flow. If the telescope moves diagonally, an observer would only see the horizontal motion, even though the optical flow would be diagonal. This projection of the optical flow onto the image gradient is known as normal flow.
+
+Normal flow is much simpler to estimate, as it only requires two consecutive camera images (it can also be calculated using event cameras; [see our lab's paper on it here](https://arxiv.org/abs/2412.11284){:target="_blank"}). Thus, I aim to create a general control algorithm that changes a normal flow field into a desired normal flow field. For example, if the desired normal flow expands radially outwards from the center, then ideally, the camera will accelerate forwards. If an object appears in the path of motion of the camera, it will see normal flow vectors at that location and adjust its acceleration accordingly to avoid the object. This is a general control algorithm because the desired normal flow can be set to an arbitrary vector field. Then, task-specific vector fields can be developed to accomplish a wide range of tasks.
+
+During my undergraduate degree, I was in the [Gemstone Honors Program at UMD](https://gemstone.umd.edu/){:target="_blank"}. As part of Team Affordable Natural Disaster Relief Robotics (ANDRR), I researched, prototyped, and tested an accessible modular system that can be attached to hobby quadcopters to enable onboard computer vision for the purposes of disaster relief. Our research started in the Fall of 2022 and concluded in the Spring of 2025. We wrote a thesis and successfully defended it in front of a panel of discussants. You can learn more about our research and read our thesis [here](https://teamandrr.wordpress.com/){:target="_blank"}.
 
 ## Work Experience
+### Summer 2026: Underwater Unmanned Vehicle Software Engineering Intern, Lockheed Martin (West Palm Beach, FL)
+
 ### Summer 2025: Systems Engineering Intern, Lockheed Martin (King of Prussia, PA)
 
 ### Summer 2024: Systems Engineering Intern, Lockheed Martin (King of Prussia, PA)
@@ -51,9 +64,12 @@ The goal of the project was to compete with other teams to move Lego towers from
 ### Image-Based Visual Servoing Controller
 The projects above both use image-based visual servoing (IBVS), which is a control technique that aims to move an object towards a desired place in an image. Indirectly, this allows robots to move towards a target while exhibiting the same stable smoothing behavior as PID controllers. For example, in DogBot, in order to track the ball and move it in between the chopsticks, we set the desired location of the image of the ball to be in the bottom center of the image. Since the TurtleBot 3 Burger is only able to move forward/backward and pivot left/right, it must necessarily move forward and turn towards the ball in order to move the image of the ball there. I followed the control equations given in ["Visual servo control I. Basic approaches" by Chaumette and Hutchinson](https://ieeexplore.ieee.org/document/4015997){:target="_blank"} and [implemented them as a Python file](https://github.com/wolr210/IBVS_Controller){:target="_blank"}, which is published on my GitHub account. In the future, I plan on expanding the controller to include all six traditional degrees of freedom, and publishing the controller as a Python package on PyPI.
 
-### September 16th, 2025
-September 16th, 2025 was my 22nd birthday. What made this day extra special was that the date was 3²/4²/5² (09/16/25), so it was a Pythagorean triple! I created a video of me performing the [constructive squares geometric proof of the Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem#Proofs_using_constructed_squares) with brownies and uploaded it to YouTube.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ydMqkE7AYXw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## Teaching Experience
+### Spring 2026: ENEE408V: Capstone Design Project; Smart Submersible Marine Vehicles (Teaching Assistant)
+As the TA for ENEE408V, I reviewed control theory and computer vision concepts in lectures. Since it is a capstone class, the students had already learned the concepts required for the project, so my goal was to guide them to think about their subersibles at the systems level. One of our teams won the 2026 UMD Capstone Design Expo! [See their project here](https://expo.umd.edu/projects/spring-2026/a3-smart-submersible-marine-vehicle){:target="_blank"}.
+
+### Spring 2026: ENEE245: Digital Circuits and Systems Laboratory
+As the TA for ENEE245, I was responsible for running Verilog labs and troubleshooting Xilinx Vivado and physical circuits. ENEE245 is a difficult class for many (including me when I took it) since students need to learn about hardware description languages and how to debug embedded systems. Because of this, I aimed to make the class as digestible as possible by providing reminders on the board about circuit components and asking students to walk me through their debugging process.
 
 ## Extracurriculars
 ### Gamer Symphony Orchestra
@@ -62,3 +78,7 @@ I am part of the [Gamer Symphony Orchestra (GSO) at UMD](https://umd.gamersympho
 
 ### The Hare
 [The Hare](https://theumdhare.com/about-us/){:target="_blank"} is a satire news organization at UMD. You can read my article about how [Taco Bell planned to open a hotel near campus](https://theumdhare.com/2024/10/02/before-budget-cuts-route-1-taco-bell-had-plans-for-new-hotel/){:target="_blank"}, or my other article about how the northern lights that were visible across the United States in October 2024 were actually [caused by the spotlights of a local bar](https://theumdhare.com/2024/10/23/spotlights-from-terrapins-turf-mistaken-for-another-aurora-borealis/){:target="_blank"}.
+
+### September 16th, 2025
+September 16th, 2025 was my 22nd birthday. What made this day extra special was that the date was 3²/4²/5² (09/16/25), so it was a Pythagorean triple! I created a video of me performing the [constructive squares geometric proof of the Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem#Proofs_using_constructed_squares) with brownies and uploaded it to YouTube.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ydMqkE7AYXw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
